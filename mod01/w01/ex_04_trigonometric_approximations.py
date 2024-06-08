@@ -1,4 +1,5 @@
 def factorial(x: int) -> int:
+    """Calculate the factorial of a non-negative integer."""
     result = 1
     for i in range(2, x + 1):
         result *= i
@@ -6,6 +7,7 @@ def factorial(x: int) -> int:
 
 
 def approx_sin(x: float, n: int) -> float:
+    """Approximate the sine function using a Taylor series expansion."""
     result = 0
     for i in range(n):
         result += (-1) ** i * x ** (2 * i + 1) / factorial(2 * i + 1)
@@ -13,6 +15,7 @@ def approx_sin(x: float, n: int) -> float:
 
 
 def approx_cos(x: float, n: int) -> float:
+    """Approximate the cosine function using a Taylor series expansion."""
     result = 0
     for i in range(n):
         result += (-1) ** i * x ** (2 * i) / factorial(2 * i)
@@ -20,6 +23,7 @@ def approx_cos(x: float, n: int) -> float:
 
 
 def approx_sinh(x: float, n: int) -> float:
+    """Approximate the hyperbolic sine function using a Taylor series expansion."""
     result = 0
     for i in range(n):
         result += x ** (2 * i + 1) / factorial(2 * i + 1)
@@ -27,6 +31,7 @@ def approx_sinh(x: float, n: int) -> float:
 
 
 def approx_cosh(x: float, n: int) -> float:
+    """Approximate the hyperbolic cosine function using a Taylor series expansion."""
     result = 0
     for i in range(n):
         result += x ** (2 * i) / factorial(2 * i)

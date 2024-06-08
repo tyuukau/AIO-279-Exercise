@@ -4,18 +4,16 @@ import random
 
 
 def mae(pred: float, true: float) -> float:
+    """Calculate the mean absolute error between predicted and true values."""
     return abs(pred - true)
 
 
 def mse(pred: float, true: float) -> float:
+    """Calculate the mean squared error between predicted and true values."""
     return (pred - true) ** 2
 
 
-def rmse(pred: float, true: float) -> float:
-    return mse(pred, true)
-
-
-def exercise3() -> None:
+def calculate_regression_loss() -> None:
     """
     Calculates the regression loss function.
 
@@ -26,7 +24,7 @@ def exercise3() -> None:
     func_dict: Dict[str, Callable[[float, float], float]] = {
         "mae": mae,
         "mse": mse,
-        "rmse": rmse,
+        "rmse": mse,  # The RMSE final loss will be raised to the 1/2 power later.
     }
 
     # Get user input for the number of samples
@@ -64,6 +62,6 @@ def exercise3() -> None:
 
 if __name__ == "__main__":
     try:
-        exercise3()
+        calculate_regression_loss()
     except Exception as e:
         print(e)

@@ -3,6 +3,7 @@ import math
 
 
 def is_number(x: Any) -> bool:
+    """Check if the input can be converted to a float."""
     try:
         float(x)
     except ValueError:
@@ -11,18 +12,21 @@ def is_number(x: Any) -> bool:
 
 
 def sigmoid(x: float) -> float:
+    """Compute the sigmoid function of the input."""
     return 1 / (1 + math.e ** (-x))
 
 
 def relu(x: float) -> float:
+    """Compute the Rectified Linear Unit (ReLU) of the input."""
     return x if x > 0 else 0
 
 
 def elu(x: float) -> float:
+    """Compute the Exponential Linear Unit (ELU) of the input."""
     return x if x > 0 else 0.01 * (math.e**x - 1)
 
 
-def exercise2() -> None:
+def calculate_activation_function() -> None:
     """
     Calculate the activation function.
 
@@ -54,6 +58,6 @@ def exercise2() -> None:
 
 if __name__ == "__main__":
     try:
-        exercise2()
+        calculate_activation_function()
     except Exception as e:
         print(e)

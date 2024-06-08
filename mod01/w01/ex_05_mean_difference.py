@@ -1,4 +1,5 @@
 def md_nre_one_sample(y: float, y_hat: float, n: int, p: int) -> float:
+    """Calculate the mean difference of n-th root error for one sample."""
     return (y ** (1 / n) - y_hat ** (1 / n)) ** p
 
 
