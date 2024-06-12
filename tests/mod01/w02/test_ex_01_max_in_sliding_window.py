@@ -1,5 +1,5 @@
 import unittest
-from w02.ex_01_max_in_sliding_window import max_in_sliding_window
+from mod01.w02.ex_01_max_in_sliding_window import max_in_sliding_window
 
 
 class TestMaxInSlidingWindow(unittest.TestCase):

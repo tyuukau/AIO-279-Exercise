@@ -1,5 +1,5 @@
 import unittest
-from w02.ex_04_levenshtein_distance import levenshtein_distance
+from mod01.w02.ex_04_levenshtein_distance import levenshtein_distance
 
 
 class LevenshteinDistanceTests(unittest.TestCase):
