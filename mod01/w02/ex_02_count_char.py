@@ -7,7 +7,3 @@ def count_char(text: str) -> dict[str, int]:
         else:
             frequency[char] += 1
     return frequency
-
-
-if __name__ == "__main__":
-    print(count_char("Happiness"))

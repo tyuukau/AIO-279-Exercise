@@ -37,11 +37,3 @@ def max_in_sliding_window(num_list: list[int], k: int) -> Generator[int | None, 
     for i in range(0, len(num_list) - k + 1):
         max_value = max([i for i in num_list[i : i + k]])
         yield max_value if max_value >= 1 else None
-
-
-if __name__ == "__main__":
-    try:
-        for max_value in max_in_sliding_window([3, -1, -1, -1, -44, 5, 10, 12, 33, 1], 3):
-            print(max_value)
-    except Exception as e:
-        print(e)
