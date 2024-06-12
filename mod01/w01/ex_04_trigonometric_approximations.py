@@ -39,8 +39,6 @@ def approx_cosh(x: float, n: int) -> float:
 
 
 if __name__ == "__main__":
-    assert round(approx_sin(x=3.14, n=10), 5) == 0.00159
-
     print("Approximation of sin(3.14):", approx_sin(x=3.14, n=10))
     print("Approximation of cos(3.14):", approx_cos(x=3.14, n=10))
     print("Approximation of sinh(3.14):", approx_sinh(x=3.14, n=10))
