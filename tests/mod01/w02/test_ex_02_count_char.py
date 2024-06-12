@@ -1,5 +1,5 @@
 import unittest
-from w02.ex_02_count_char import count_char
+from mod01.w02.ex_02_count_char import count_char
 
 
 class TestCountChar(unittest.TestCase):
