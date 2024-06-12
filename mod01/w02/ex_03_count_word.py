@@ -33,9 +33,3 @@ def count_word_in_file(file_path: str) -> dict[str, int]:
             frequency[normalised_word] += 1
 
     return frequency
-
-
-if __name__ == "__main__":
-    result = count_word_in_file("./data/P1_data.txt")
-    if result:
-        print(result)

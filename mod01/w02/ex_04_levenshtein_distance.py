@@ -30,10 +30,3 @@ def levenshtein_distance(s1: str, s2: str) -> int:
                 dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
 
     return dp[m][n]
-
-
-if __name__ == "__main__":
-    s1 = "Hieu"
-    s2 = "Hiu"
-    distance = levenshtein_distance(s1=s1, s2=s2)
-    print(distance)
