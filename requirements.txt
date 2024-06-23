@@ -1,2 +1,2 @@
-tox
 torch==2.0.0
+pip-sync-faster==0.0.4
