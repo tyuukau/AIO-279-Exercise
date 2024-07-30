@@ -2,7 +2,7 @@ import numpy as np
 
 
 def compute_cosine(v1: list[float], v2: list[float]) -> float:
-    """Calculate the eigenvalues and eigenvectors of a matrix."""
+    """Calculate the cosine similarity of two vectors."""
     # Convert the input lists to numpy arrays
     v1_np = np.array(v1)
     v2_np = np.array(v2)
